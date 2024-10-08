@@ -1,6 +1,6 @@
-document.getElementById('content').classList.remove("d-flex");
+const apiKey = CONFIG.API_KEY;
 
-const api_key = "9dad7c23be5c4a66bd0141723240310"; // from weatherapi.com
+document.getElementById('content').classList.remove("d-flex");
 
 //function to fetch weather data
 function getWeather(params) {
@@ -8,7 +8,7 @@ function getWeather(params) {
 
     if (!city) return alert("Please enter a city name");
 
-    const url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${city}`
+    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
 
 
     fetch(url)

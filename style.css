@@ -48,6 +48,9 @@ body {
     margin: 2rem;
 }
 
+#content.d-flex {
+    display: flex !important;
+}
 /* Media Query for smaller screens (max-width: 600px) */
 @media only screen and (max-width: 600px) {
     #container {
